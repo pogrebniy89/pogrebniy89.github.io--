@@ -1,0 +1,27 @@
+@mixin H1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 120%;
+}
+
+@mixin H2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
+}
+
+@mixin H3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+@mixin H4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
