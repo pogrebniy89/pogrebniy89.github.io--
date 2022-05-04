@@ -21,6 +21,10 @@
   @media screen and (max-width: 595px) {
    justify-content: space-between;
   }
+
+  @media screen and (max-width: 769px) {
+    height: 130px;
+  }
 }
 
 .logo {
