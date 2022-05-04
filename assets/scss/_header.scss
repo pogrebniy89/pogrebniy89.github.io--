@@ -8,6 +8,10 @@
   @media screen and (max-width: 595px) {
     background: $c4;
   }
+
+  @media screen and (max-width: 1023px) {
+    position: static;
+  }
 }
 
 .header__wrap {
