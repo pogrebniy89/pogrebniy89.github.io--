@@ -9,18 +9,49 @@
   flex-direction: column;
   align-items: center;
 
+  @media screen and (max-width: 1439px) {
+    margin-top: 318px;
+  }
+  @media screen and (max-width: 1023px) {
+    margin-top: 356px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: 954px;
+  }
+
   h2 {
     @include H2;
     color: $c5;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 36px;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+      text-align: center;
+    }
   }
 
   h3 {
     @include H3;
     color: $c1;
     margin-top: 30px;
+
+    @media screen and (max-width: 1439px) {
+      font-size: 24px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 767px) {
+      font-size: 16px;
+      margin-top: 20px;
+    }
   }
 
-  button{
+  button {
     width: 404px;
     height: 60px;
     margin-top: 40px;
@@ -46,6 +77,14 @@
     &:active {
       background: $c2;
     }
+
+    @media screen and (max-width: 1439px) {
+      margin-top: 82px;
+    }
+
+    @media screen and (max-width: 767px) {
+      width: 280px;
+    }
   }
 }
 
@@ -56,15 +95,52 @@
   flex-direction: row;
   justify-content: space-between;
 
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px !important;
+  }
+
+  li + li {
+    @media screen and (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+
   a {
     display: block;
     width: 410px;
     cursor: pointer;
     text-decoration: none;
+    border-right: 20px;
+
+    @media screen and (max-width: 1439px) {
+      width: 300px;
+    }
+
+    @media screen and (max-width: 1023px) {
+      width: 230px;
+    }
+
+    &:hover {
+      background: $c4;
+      border-radius: 20px;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
   }
 
   img {
-    width: 410px;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+
+    @media screen and (max-width: 1023px) {
+      height: 200px;
+      object-fit: cover;
+    }
   }
 
   p {
@@ -78,6 +154,15 @@
       text-align: center;
 
       color: $c5;
+
+      @media screen and (max-width: 1439px) {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+      @media screen and (max-width: 1023px) {
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
 
     &:nth-of-type(2) {
@@ -90,6 +175,17 @@
       text-align: center;
 
       color: $c5;
+
+      @media screen and (max-width: 1439px) {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+      @media screen and (max-width: 1023px) {
+        font-size: 18px;
+      }
+      @media screen and (max-width: 767px) {
+        margin-top: 20px;
+      }
     }
   }
 }
